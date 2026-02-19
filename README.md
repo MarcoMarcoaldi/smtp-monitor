@@ -200,11 +200,11 @@ sudo dnf install gcc ncurses-devel
 # Debian / Ubuntu:
 sudo apt install gcc libncurses-dev
 
-# Compile
-gcc -O2 -o smtp-monitor smtp-monitor.c -lncurses -lpthread
+# Build
+make
 
 # Optionally install system-wide
-sudo cp smtp-monitor /usr/local/bin/
+sudo make install
 ```
 
 ---
